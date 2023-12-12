@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+
+        section {
+            display: none;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .skills {
+            display: none;
+        }
+
+        .skills-item {
+            margin-bottom: 20px;
+        }
+
+        .skills-item img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+        }
+    </style>
+    <title>Chatti Anu Sri- Personal Website</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="C:\Users\91733\Downloads\WhatsApp Image 2023-12-12 at 11.05.25 PM.jpeg" alt="Chatti Anu Sri">
+            <h1>Chatti Anu Sri</h1>
+            <nav>
+                <ul>
+                    <li onclick="showContent('about')">About</li>
+                    <li onclick="showContent('home')">Home</li>
+                    <li onclick="showContent('contact')">Contact</li>
+                    <li onclick="showContent('skills')">Skills</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am chatti Anu Sri studing B.tech in Gayatri vidya parishad college of engineering for women.I like reading books and learning new things.I completed my schooling in Ravindra Bharathi with 98%. I scored top in the exams conducted in our school. I like active participation in Academics and culturals that are conducted. I have participated in spell bee contest and selected for the final round. I love listening to music and enjoy watching nature.</p>
+   
+    </section>
+
+    <section id="home" class="container">
+        <h2>Home</h2>
+        <p>Welcome to my personal website!</p>
+        <p>It contains the deatils about my personal information</p>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>My contact number is : 7337214375</p>
+        <p>You can reach me at your chattianusri1609@gmail.com</p>
+    </section>
+
+    <section id="skills" class="container skills">
+        <h2>Skills</h2>
+        <div class="skills-item">
+           <h1>Soft Skills</h1>
+           <h1>1.Effective Communication</h1>
+            <h1>2.Team Collaboration</h1>
+            <h1>3.Adaptability</h1>
+            <h1>4.Problem Solving</h1>
+            <h1>5.Leadership</h1>
+            <h1>6.Time Management</h1>
+        </div>
+        <div class="skills-item">
+            <h1>Coding Skills</h1>
+            <h1>1.Problem Solving</h1>
+            <h1>2.Innovation </h1>
+            <h1>3.Career Opportunities </h1>
+            <h1>4.Critical Thinking </h1>
+            <h1>5.Entrepreneurship</h1>
+            <h1>6.Understanding Technology</h1>
+        </div>
+    </section>
+
+    <script>
+        function showContent(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
